@@ -13,6 +13,10 @@
   <div class="m-2">
     <a class="h3" th:href="@{/users/new}">Add New User</a>
   </div>
+  <!--/*@thymesVar id="messages" type=""*/-->
+  <div th:if="${messages}" class="alert alert-success text-center">
+    [[${#messages}]]
+  </div>
   <div>
     <table class="table table-bordered">
       <thead class="thead-dark">
