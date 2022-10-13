@@ -18,4 +18,11 @@ public class UserController {
         model.addAttribute("listUser", listUser);
         return "users";
     }
+
+    @GetMapping("/users/new")
+    public String showNewUserForm(Model model) {
+        User user = new User();
+        model.addAttribute("user", user);
+        return "user_form";
+    }
 }
