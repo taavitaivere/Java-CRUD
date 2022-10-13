@@ -15,15 +15,19 @@
             <div class="border border-secondary rounded p-3">
                 <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName" th:field="*{firstName}" placeholder="Enter First Name">
+                    <input type="text" class="form-control" id="firstName" th:field="*{firstName}" placeholder="Enter First Name" required minlength="3">
                 </div>
                 <div class="form-group">
                     <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" th:field="*{lastName}" placeholder="Enter Last Name">
+                    <input type="text" class="form-control" id="lastName" th:field="*{lastName}" placeholder="Enter Last Name" required minlength="3">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" th:field="*{email}" placeholder="Enter Email">
+                    <input type="email" class="form-control" id="email" th:field="*{email}" placeholder="Enter Email" required minlength="5">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" th:field="*{password}" placeholder="Enter Password" required minlength="5">
                 </div>
                 <div class="form-group">
                     <input type="checkbox" class="" th:field="*{enabled}">Submit</input>
