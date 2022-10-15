@@ -35,6 +35,7 @@
           <td th:text="${user.firstName}"></td>
           <td th:text="${user.lastName}"></td>
           <td th:text="${user.email}"></td>
+          <td th:text="${user.enabled}"></td>
           <td>
             <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn btn-info">Edit</a>
             <a th:href="@{/users/delete/{id}(id=${user.id})}" class="btn btn-danger">Delete</a>
